@@ -40,10 +40,10 @@ const MobileNav = () => {
         </div>
         {/* menu list */}
         <ul className='h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl'>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/portfolio'>Portfolio</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
+          <li><Link to='/rbmphoto'>Home</Link></li>
+          <li><Link to='/rbmphoto/about'>About</Link></li>
+          <li><Link to='/rbmphoto/portfolio'>Portfolio</Link></li>
+          <li><Link to='/rbmphoto/contact'>Contact</Link></li>
         </ul>
       </motion.div>
     </nav>

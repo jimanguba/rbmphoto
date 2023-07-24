@@ -9,10 +9,10 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 
 const AnimRoutes = () => {
   return <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/about' element={<About />} />
-    <Route path='/portfolio' element={<Portfolio />} />
-    <Route path='/contact' element={<Contact />} />
+    <Route path='/rbmphoto' element={<Home />} />
+    <Route path='/rbmphoto/about' element={<About />} />
+    <Route path='/rbmphoto/portfolio' element={<Portfolio />} />
+    <Route path='/rbmphoto/contact' element={<Contact />} />
   </Routes>
 };
 
