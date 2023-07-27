@@ -1,0 +1,136 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Pricing = () => {
+  return (
+    <section className="section pt-32">
+      {/* <div className="container mx-auto h-full relative"> */}
+      <h1 className="h1 text-6xl text-center"> Packages</h1>
+      {/* Packages!!! */}
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 mt-10">
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-blue-600">
+            Package A
+          </h2>
+          <p className="text-gray-800">
+            Preserve cherished moments with our Classic Memories package.
+            Perfect for weddings, birthdays, and special events, this package
+            includes:
+            <ul className="list-disc list-inside">
+              <li>Two high-quality 2x6 prints per photo session</li>
+              <li>Unlimited photo sessions and prints</li>
+              <li>Customized photobooth template</li>
+              <li>Photo booth duration: 2 hours</li>
+            </ul>
+            <br />
+            Additional Option:
+            <ul className="list-disc list-inside">
+              <li>Upgrade to 4x6 prints for only $50 extra</li>
+            </ul>
+          </p>
+          <p className="text-gray-600 mt-4 text-xl font-bold">
+            Price: $279 + TAX
+          </p>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-green-600">
+            Package B
+          </h2>
+          <p className="text-gray-800">
+            Elevate your event with our Premium Delight package, designed for
+            corporate gatherings, galas, and grand celebrations. This package
+            includes:
+            <ul className="list-disc list-inside">
+              <li>High-quality 4x6 or 2x6 prints</li>
+              <li>Up to 4 prints per photo session</li>
+              <li>Unlimited photo sessions and prints</li>
+              <li>Customized photobooth template</li>
+              <li>Instant digital photo copy after each photo session!</li>
+              <li>Photo booth duration: 3 hours</li>
+            </ul>
+          </p>
+          <p className="text-gray-600 mt-4 text-xl font-bold">
+            Price: $519 + TAX
+          </p>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-purple-600">
+            Package C
+          </h2>
+          <p className="text-gray-800">
+            Treat your guests to an unforgettable experience with our Luxury
+            Extravaganza package. Ideal for anniversaries, prom nights, and
+            high-profile events, this package includes:
+            <ul className="list-disc list-inside">
+              <li>High-quality 4x6 or 2x6 prints</li>
+              <li>Up to 6 prints per photo session</li>
+              <li>Unlimited photo sessions and prints</li>
+              <li>Customized photobooth template</li>
+              <li>Online Galleries: both options</li>
+              <li>Instant digital photo copy after each photo session!</li>
+              <li>Photo booth duration: 5 hours</li>
+            </ul>
+          </p>
+          <p className="text-gray-600 mt-4 text-xl font-bold">
+            Price: $749 + TAX
+          </p>
+        </div>
+      </div>
+
+      {/* Add-ons */}
+      <h1 className="h1 text-4xl text-center mt-16">Add-ons</h1>
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 mt-10">
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
+            Add-on: Extended Fun
+          </h2>
+          <p className="text-gray-800">
+            Keep the celebration going with our Extended Fun add-on! Treat your
+            guests to an additional hour of photo booth joy, capturing more
+            precious memories.
+          </p>
+          <p className="text-gray-600 mt-4 text-xl font-bold">Price: $100</p>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
+            Add-on: Outside Winnipeg
+          </h2>
+          <p className="text-gray-800">
+            Planning an event outside of Winnipeg? Don't worry, we've got you
+            covered! With our Outside Winnipeg add-on, we extend our services to
+            reach your destination.
+            <p className="text-gray-600 mt-4 text-xl font-bold">Price:</p>
+            <ul className="list-disc list-inside">
+              <li>Within Winnipeg: No additional charge</li>
+              <li >Outside Winnipeg: <b>+$0.50/km</b></li>
+            </ul>
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
+            Add-on: Online Gallery
+          </h2>
+          <p className="text-gray-800">
+            After your event, you will receive a comprehensive online gallery
+            featuring all the photos taken directly from the photobooth camera
+            and/or the printed photos with the custom overlay. Conveniently
+            access and share the full set of photos that captured the essence of
+            your event.
+            <p className="text-gray-600 mt-4 text-xl font-bold">Price:</p>
+            <ul className="list-disc list-inside">
+              <li>Photos taken from camera: <b>+$20</b></li>
+              <li>Printed photos with the personalized template design: <b>+$20</b></li>
+            </ul>
+          </p>
+        </div>
+        {/* </div> */}
+      </div>
+      <Link to={"/rbmphoto/contact"} className="btn mb-[30px]">
+        book now!
+      </Link>
+    </section>
+  );
+};
+
+export default Pricing;

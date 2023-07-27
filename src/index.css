@@ -4,15 +4,21 @@
 
 @layer base {
   body {
-    @apply overflow-hidden text-primary font-secondary bg-white;
+    @apply text-primary font-secondary bg-white;
   }
   .h1 {
     @apply text-[54px] lg:text-[108px] font-primary font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2;
   }
   .section {
-    @apply h-screen w-screen;
+    /* Remove h-screen and w-screen from section, as it prevents scrolling */
+    @apply min-h-screen; /* Use min-h-screen to ensure at least full viewport height */
+    @apply overflow-y-auto; /* Enable vertical scrolling when content exceeds viewport height */
   }
   .btn {
     @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white;
+  }
+  
+  .gallery-grid {
+    @apply grid gap-4 md:grid-cols-3;
   }
 }

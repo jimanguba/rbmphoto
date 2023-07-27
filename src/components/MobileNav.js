@@ -43,6 +43,7 @@ const MobileNav = () => {
           <li><Link to='/rbmphoto'>Home</Link></li>
           <li><Link to='/rbmphoto/about'>About</Link></li>
           <li><Link to='/rbmphoto/portfolio'>Portfolio</Link></li>
+          <li><Link to='/rbmphoto/pricing'>Pricing</Link></li>
           <li><Link to='/rbmphoto/contact'>Contact</Link></li>
         </ul>
       </motion.div>
