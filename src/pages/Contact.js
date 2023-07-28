@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { ImPhone, ImMail, ImLocation } from "react-icons/im";
 
+import { motion } from "framer-motion";
+import { transition1 } from "../transitions.js";
+
 const Contact = () => {
   const initialFormState = {
     name: "",
@@ -75,10 +78,24 @@ const Contact = () => {
   };
 
   return (
-    <section className="section pt-32">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition1}
+      className="section pt-32"
+    >
       <div className="container mx-auto flex items-center justify-center">
         <div className="max-w-lg w-full">
-          <h1 className="h1 text-6xl text-center">Contact me</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: "-50%" }}
+            animate={{ opacity: 1, y: "0%" }}
+            exit={{ opacity: 0, y: "-50%" }}
+            transition={transition1}
+            className="h1 text-6xl text-center"
+          >
+            Contact me
+          </motion.h1>
           {/* Contact me! */}
           <div className="flex items-center justify-center">
             <a href="tel:+12042271224">
@@ -233,9 +250,9 @@ const Contact = () => {
                 value={formValues.selectedPackage}
               >
                 <option value="">Select a package</option>
-                <option value="A">Package A - $280 + TAX</option>
-                <option value="B">Package B - $450 + TAX</option>
-                <option value="C">Package C - $650 + TAX</option>
+                <option value="A">Package A - $279 + TAX</option>
+                <option value="B">Package B - $519 + TAX</option>
+                <option value="C">Package C - $759 + TAX</option>
                 <option value="undecided">Undecided</option>
               </select>
             </div>
@@ -308,7 +325,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

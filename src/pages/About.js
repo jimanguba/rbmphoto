@@ -4,19 +4,40 @@ import AboutImg from "../img/about/about.png";
 
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+import { transition1 } from "../transitions.js";
+
 const About = () => {
   return (
-    <section className="section pt-32">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition1}
+      className="section pt-32"
+    >
       <div className="container mx-auto h-full relative">
         {/* txt and img */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-x-24 text-center lg:text-left">
           {/* img */}
-          <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0 }}
+              transition={transition1} className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
             <img src={AboutImg} alt="" />
-          </div>
+          </motion.div>
           {/* txt */}
           <div className="flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start">
-            <h1 className="h1 text-6xl text-center">Who We Are</h1>
+            <motion.h1
+              initial={{ opacity: 0, y: "-50%" }}
+              animate={{ opacity: 1, y: "0%" }}
+              exit={{ opacity: 0, y: "-50%" }}
+              transition={transition1}
+              className="h1 text-6xl text-center"
+            >
+              Who We Are
+            </motion.h1>
             <p>
               Welcome to RBM Photo Booth, your trusted source for delightful
               photo booth rentals in Winnipeg, MB, and the surrounding areas!
@@ -68,7 +89,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

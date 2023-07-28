@@ -1,11 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+import { transition1 } from "../transitions.js";
 const Pricing = () => {
   return (
-    <section className="section pt-32">
-      {/* <div className="container mx-auto h-full relative"> */}
-      <h1 className="h1 text-6xl text-center"> Packages</h1>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition1}
+      className="section pt-32"
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: "-50%" }}
+        animate={{ opacity: 1, y: "0%" }}
+        exit={{ opacity: 0, y: "-50%" }}
+        transition={transition1}
+        className="h1 text-6xl text-center"
+      >
+        Packages
+      </motion.h1>
       {/* Packages!!! */}
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 mt-10">
         <div className="bg-white shadow-lg rounded-lg p-6">
@@ -102,7 +117,9 @@ const Pricing = () => {
             <p className="text-gray-600 mt-4 text-xl font-bold">Price:</p>
             <ul className="list-disc list-inside">
               <li>Within Winnipeg: No additional charge</li>
-              <li >Outside Winnipeg: <b>+$0.50/km</b></li>
+              <li>
+                Outside Winnipeg: <b>+$0.50/km</b>
+              </li>
             </ul>
           </p>
         </div>
@@ -119,8 +136,13 @@ const Pricing = () => {
             your event.
             <p className="text-gray-600 mt-4 text-xl font-bold">Price:</p>
             <ul className="list-disc list-inside">
-              <li>Photos taken from camera: <b>+$20</b></li>
-              <li>Printed photos with the personalized template design: <b>+$20</b></li>
+              <li>
+                Photos taken from camera: <b>+$20</b>
+              </li>
+              <li>
+                Printed photos with the personalized template design:{" "}
+                <b>+$20</b>
+              </li>
             </ul>
           </p>
         </div>
@@ -129,7 +151,7 @@ const Pricing = () => {
       <Link to={"/contact"} className="btn mb-[30px]">
         book now!
       </Link>
-    </section>
+    </motion.section>
   );
 };
 
