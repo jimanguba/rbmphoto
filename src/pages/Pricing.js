@@ -126,7 +126,7 @@ const Pricing = () => {
         </div>
         {/* </div> */}
       </div>
-      <Link to={"/rbmphoto/contact"} className="btn mb-[30px]">
+      <Link to={"/contact"} className="btn mb-[30px]">
         book now!
       </Link>
     </section>

@@ -27,7 +27,7 @@ const Home = () => {
             <p className="text-[16px] lg:text-[20px] font-primary mb-4 lg:mb-12">
               Discover affordable photo booth rentals in Winnipeg, perfect for weddings and events throughout Manitoba. Our cutting-edge technology, fun props, and stylish backdrops promise an unforgettable experience.
             </p>
-            <Link to={"/rbmphoto/contact"} className="btn mb-[30px]">
+            <Link to={"/contact"} className="btn mb-[30px]">
               Book now and capture the magic!
             </Link>
           </div>

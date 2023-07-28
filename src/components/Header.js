@@ -11,37 +11,37 @@ const Header = () => {
     <header className="fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* logo */}
-        <Link to={"/rbmphoto"} className="max-w-[200px]">
+        <Link to={"/"} className="max-w-[200px]">
           <img src={Logo} alt="" />
         </Link>
         {/* nav */}
         <nav className="hidden xl:flex gap-x-12 font-semibold">
           <Link
-            to={"/rbmphoto"}
+            to={"/"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Home
           </Link>
           <Link
-            to={"/rbmphoto/about"}
+            to={"/about"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             About
           </Link>
           <Link
-            to={"/rbmphoto/portfolio"}
+            to={"/portfolio"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Portfolio
           </Link>
           <Link
-            to={"/rbmphoto/pricing"}
+            to={"/pricing"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Pricing
           </Link>
           <Link
-            to={"/rbmphoto/contact"}
+            to={"/contact"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Contact

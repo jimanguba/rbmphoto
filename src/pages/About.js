@@ -58,7 +58,7 @@ const About = () => {
             </p>
             <br />
             <br />
-            <Link to={"/rbmphoto/portfolio"} className="btn">
+            <Link to={"/portfolio"} className="btn">
               Photo booth pics
             </Link>{" "}
             <br />
