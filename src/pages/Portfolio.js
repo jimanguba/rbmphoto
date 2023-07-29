@@ -21,7 +21,7 @@ const Portfolio = () => {
       >
         Portfolio
       </motion.h1>
-      <p className="text-lg md:text-xl lg:text-2xl text-center px-4 md:px-0">
+      <p className="text-lg md:text-xl text-center px-4 md:px-0">
         Portfolio under construction! We have started showcasing event
         galleries, and more past event memories will be added soon.
         <br />

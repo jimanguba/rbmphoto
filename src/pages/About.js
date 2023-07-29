@@ -37,7 +37,7 @@ const About = () => {
             >
               Who We Are
             </motion.h1>
-            <p className="text-lg md:text-xl lg:text-2xl">
+            <p>
               Welcome to RBM Photo Booth, your trusted source for delightful
               photo booth rentals in Winnipeg, MB, and the surrounding areas!
               <br />
