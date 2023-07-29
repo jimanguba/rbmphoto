@@ -15,7 +15,7 @@ const Home = () => {
     >
       <div className="container mx-auto h-full relative">
         {/* text & img wrapper */}
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
           {/* image */}
           <div className="flex justify-center max-h-96 lg:max-h-max lg:w-1/2">
             <motion.div
@@ -25,11 +25,11 @@ const Home = () => {
               transition={transition1}
               className="relative lg:-left-40 overflow-hidden"
             >
-              <img src={HomeImg} alt="" />
+              <img src={HomeImg} alt="RBM Photo Booth in Winnipeg" />
             </motion.div>
           </div>
           {/* text */}
-          <div className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-1/2 lg:pl-16">
+          <div className="w-full mt-8 px-4 lg:w-1/2 lg:pl-16 pr-4 lg:px-8">
             <motion.h1
               initial={{ opacity: 0, y: "-50%" }}
               animate={{ opacity: 1, y: 0 }}

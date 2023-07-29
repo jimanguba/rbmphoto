@@ -1,9 +1,6 @@
 import React from "react";
-
 import AboutImg from "../img/about/about.png";
-
 import { Link } from "react-router-dom";
-
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions.js";
 
@@ -18,27 +15,29 @@ const About = () => {
     >
       <div className="container mx-auto h-full relative">
         {/* txt and img */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-x-24 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-x-4 md:gap-x-24 text-center lg:text-left">
           {/* img */}
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0 }}
-              transition={transition1} className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
-            <img src={AboutImg} alt="" />
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0 }}
+            transition={transition1}
+            className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden"
+          >
+            <img src={AboutImg} alt="RBM Photo Booth - Who We Are" />
           </motion.div>
           {/* txt */}
-          <div className="flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start">
+          <div className="flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start px-4 md:px-0">
             <motion.h1
               initial={{ opacity: 0, y: "-50%" }}
               animate={{ opacity: 1, y: "0%" }}
               exit={{ opacity: 0, y: "-50%" }}
               transition={transition1}
-              className="h1 text-6xl text-center"
+              className="h1 text-4xl md:text-6xl lg:text-8xl text-center"
             >
               Who We Are
             </motion.h1>
-            <p>
+            <p className="text-lg md:text-xl lg:text-2xl">
               Welcome to RBM Photo Booth, your trusted source for delightful
               photo booth rentals in Winnipeg, MB, and the surrounding areas!
               <br />

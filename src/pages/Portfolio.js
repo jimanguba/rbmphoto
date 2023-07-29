@@ -21,6 +21,20 @@ const Portfolio = () => {
       >
         Portfolio
       </motion.h1>
+      <p className="text-lg md:text-xl lg:text-2xl text-center px-4 md:px-0">
+        Portfolio under construction! We have started showcasing event
+        galleries, and more past event memories will be added soon.
+        <br />
+        Thank you for your patience. Feel free to check out our{" "}
+        <a
+          href="https://www.facebook.com/photographyrbm/"
+          target="_blank"
+          className="underline text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300"
+        >
+          Facebook page{" "}
+        </a>
+        for more 🙂
+      </p>
       <iframe
         title="pic-time integration"
         frameborder="0"

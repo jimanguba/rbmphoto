@@ -86,7 +86,7 @@ const Contact = () => {
       className="section pt-32"
     >
       <div className="container mx-auto flex items-center justify-center">
-        <div className="max-w-lg w-full">
+        <div className="max-w-3x1 mx-auto px-4 md:px-8 lg:px-16">
           <motion.h1
             initial={{ opacity: 0, y: "-50%" }}
             animate={{ opacity: 1, y: "0%" }}

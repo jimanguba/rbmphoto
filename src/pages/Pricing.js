@@ -28,19 +28,21 @@ const Pricing = () => {
             Package A
           </h2>
           <p className="text-gray-800">
-            Preserve cherished moments with our Classic Memories package.
-            Perfect for weddings, birthdays, and special events, this package
-            includes:
+            Includes:
             <ul className="list-disc list-inside">
-              <li>Two high-quality 2x6 prints per photo session</li>
+              <li>2 hours of operation</li>
+              <li>Up to two 2x6 prints per photo session</li>
               <li>Unlimited photo sessions and prints</li>
               <li>Customized photobooth template</li>
-              <li>Photo booth duration: 2 hours</li>
+              <li>Booth Attendant included</li>
             </ul>
             <br />
-            Additional Option:
+            Additional Upgrade:
             <ul className="list-disc list-inside">
-              <li>Upgrade to 4x6 prints for only $50 extra</li>
+              <li>
+                One 4x6 print instead of two 2x6 prints per photo session:{" "}
+                <b>+$50</b>
+              </li>
             </ul>
           </p>
           <p className="text-gray-600 mt-4 text-xl font-bold">
@@ -52,16 +54,14 @@ const Pricing = () => {
             Package B
           </h2>
           <p className="text-gray-800">
-            Elevate your event with our Premium Delight package, designed for
-            corporate gatherings, galas, and grand celebrations. This package
-            includes:
+            Includes:
             <ul className="list-disc list-inside">
-              <li>High-quality 4x6 or 2x6 prints</li>
-              <li>Up to 4 prints per photo session</li>
+              <li>3 hours of operation</li>
+              <li>Up to four 4x6 or six 2x6 prints per photo session</li>
               <li>Unlimited photo sessions and prints</li>
               <li>Customized photobooth template</li>
+              <li>Booth Attendant included</li>
               <li>Instant digital photo copy after each photo session!</li>
-              <li>Photo booth duration: 3 hours</li>
             </ul>
           </p>
           <p className="text-gray-600 mt-4 text-xl font-bold">
@@ -73,17 +73,15 @@ const Pricing = () => {
             Package C
           </h2>
           <p className="text-gray-800">
-            Treat your guests to an unforgettable experience with our Luxury
-            Extravaganza package. Ideal for anniversaries, prom nights, and
-            high-profile events, this package includes:
+            Includes:
             <ul className="list-disc list-inside">
-              <li>High-quality 4x6 or 2x6 prints</li>
-              <li>Up to 6 prints per photo session</li>
+              <li>5 hours of operation</li>
+              <li>Up to six 4x6 or ten 2x6 prints per photo session</li>
               <li>Unlimited photo sessions and prints</li>
               <li>Customized photobooth template</li>
-              <li>Online Galleries: both options</li>
+              <li>Booth Attendant included</li>
               <li>Instant digital photo copy after each photo session!</li>
-              <li>Photo booth duration: 5 hours</li>
+              <li>Online Gallery add-on (both options) included</li>
             </ul>
           </p>
           <p className="text-gray-600 mt-4 text-xl font-bold">
@@ -129,11 +127,13 @@ const Pricing = () => {
             Add-on: Online Gallery
           </h2>
           <p className="text-gray-800">
-            After your event, you will receive a comprehensive online gallery
-            featuring all the photos taken directly from the photobooth camera
-            and/or the printed photos with the custom overlay. Conveniently
-            access and share the full set of photos that captured the essence of
-            your event.
+            Receive a complete online gallery after your event, showcasing all
+            the photos taken directly from the photobooth camera and/or printed
+            photos with the custom template. Easily access and share the full
+            set of photos, capturing the essence of your event.
+            <br />
+            Optionally, you can include password protection for your online
+            gallery.
             <p className="text-gray-600 mt-4 text-xl font-bold">Price:</p>
             <ul className="list-disc list-inside">
               <li>
