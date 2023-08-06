@@ -82,7 +82,7 @@ const About = () => {
               Photo booth pics
             </Link>{" "}
             <br />
-            <a href="https://wordpress.org/" className="btn">
+            <a href="https://blogphotobooth.wordpress.com/" className="btn" target="_blank">
               Blog
             </a>
           </div>
