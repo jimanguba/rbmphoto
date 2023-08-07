@@ -17,7 +17,7 @@ const About = () => {
         {/* txt and img */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-x-4 md:gap-x-24 text-center lg:text-left">
           {/* img */}
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
@@ -25,7 +25,7 @@ const About = () => {
             className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden"
           >
             <img src={AboutImg} alt="RBM Photo Booth - Who We Are" />
-          </motion.div>
+          </motion.div> */}
           {/* txt */}
           <div className="flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start px-4 md:px-0">
             <motion.h1
@@ -77,14 +77,28 @@ const About = () => {
               today, and let the laughter and merriment begin!
             </p>
             <br />
-            <br />
             <Link to={"/portfolio"} className="btn">
               Photo booth pics
             </Link>{" "}
             <br />
-            <a href="https://blogphotobooth.wordpress.com/" className="btn" target="_blank">
+            <a
+              href="https://blogphotobooth.wordpress.com/"
+              className="btn"
+              target="_blank"
+            >
               Blog
             </a>
+            <br />
+            <iframe
+              title="RBM Photo Booth Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20605.636460357186!2d-97.13695954999999!3d49.7916206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c1df5a5f23730d%3A0x43d453b62b163ada!2sFort%20Richmond%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1691378779201!5m2!1sen!2sca"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+            <br />
           </div>
         </div>
       </div>

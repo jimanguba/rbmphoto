@@ -43,7 +43,7 @@ const Home = () => {
               Winnipeg, MB
             </p>
             <p className="text-[16px] lg:text-[20px] font-primary mb-4 lg:mb-12">
-              Elevate Your Event with RBM Photography!
+              Elevate Your Event with RBM Photo Booth!
             </p>
             <p className="text-[16px] lg:text-[20px] font-primary mb-4 lg:mb-12">
               Discover affordable photo booth rentals in Winnipeg, perfect for
