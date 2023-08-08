@@ -19,6 +19,7 @@ const Contact = () => {
       "Online Gallery: Printed photos with the personalized template design": false,
       "Online Gallery: Photos taken from camera": false,
     },
+    budget: "",
   };
 
   const [formValues, setFormValues] = useState(initialFormState);
@@ -239,7 +240,7 @@ const Contact = () => {
                 htmlFor="selectedPackage"
                 className="block text-sm font-medium text-gray-700"
               >
-                Select a Pricing Package *
+                Select a Package *
               </label>
               <select
                 name="selectedPackage"
@@ -250,9 +251,9 @@ const Contact = () => {
                 value={formValues.selectedPackage}
               >
                 <option value="">Select a package</option>
-                <option value="A">Package A - $279 + TAX</option>
-                <option value="B">Package B - $519 + TAX</option>
-                <option value="C">Package C - $759 + TAX</option>
+                <option value="A">Package A</option>
+                <option value="B">Package B</option>
+                <option value="C">Package C</option>
                 <option value="undecided">Undecided</option>
               </select>
             </div>
@@ -278,7 +279,7 @@ const Contact = () => {
                             min="0"
                           />
                           <span className="text-gray-600 ml-2">
-                            {addon} - Price: ${getAddonPrice(addon)}
+                            {addon}
                           </span>
                         </>
                       ) : (
@@ -291,7 +292,7 @@ const Contact = () => {
                             onChange={handleAddonChange}
                           />
                           <span className="text-gray-600 ml-2">
-                            {addon} - Price: ${getAddonPrice(addon)}
+                            {addon}
                           </span>
                         </>
                       )}
@@ -299,6 +300,22 @@ const Contact = () => {
                   )
                 )}
               </div>
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="budget"
+                className="block text-sm font-medium text-gray-700"
+              >
+                 Your Budget
+              </label>
+              <input
+                type="text"
+                name="budget"
+                id="budget"
+                className="mt-1 px-4 py-2 block w-full border rounded-md focus:ring-accent focus:border-accent"
+                value={formValues.budget}
+                onChange={handleChange}
+              />
             </div>
             <div className="mb-4">
               <label
@@ -312,14 +329,14 @@ const Contact = () => {
                 id="event-details"
                 rows={4}
                 className="mt-1 px-4 py-2 block w-full border rounded-md focus:ring-accent focus:border-accent"
-                placeholder="What do I need to know? Is it outside the city?"
+                placeholder="What do I need to know?"
                 value={formValues.eventDetails}
                 onChange={handleChange}
               />
             </div>
             <div className="text-center">
               <button type="submit" className="btn">
-                Submit
+                send quote
               </button>
             </div>
           </form>

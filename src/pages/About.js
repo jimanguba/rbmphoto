@@ -77,17 +77,19 @@ const About = () => {
               today, and let the laughter and merriment begin!
             </p>
             <br />
-            <Link to={"/portfolio"} className="btn">
-              Photo booth pics
-            </Link>{" "}
-            <br />
-            <a
-              href="https://blogphotobooth.wordpress.com/"
-              className="btn"
-              target="_blank"
-            >
-              Blog
-            </a>
+            <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-x-4 md:space-y-0">
+              <Link to={"/portfolio"} className="btn">
+                Photo booth pics
+              </Link>
+              <a
+                href="https://blogphotobooth.wordpress.com/"
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
+            </div>
             <br />
             <iframe
               title="RBM Photo Booth Location"

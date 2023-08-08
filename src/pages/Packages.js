@@ -45,9 +45,9 @@ const Pricing = () => {
               </li>
             </ul>
           </p>
-          <p className="text-gray-600 mt-4 text-xl font-bold">
+          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
             Price: $279 + TAX
-          </p>
+          </p> */}
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-green-600">
@@ -64,9 +64,9 @@ const Pricing = () => {
               <li>Instant digital photo copy after each photo session!</li>
             </ul>
           </p>
-          <p className="text-gray-600 mt-4 text-xl font-bold">
+          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
             Price: $519 + TAX
-          </p>
+          </p> */}
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-purple-600">
@@ -84,9 +84,9 @@ const Pricing = () => {
               <li>Online Gallery add-on (both options) included</li>
             </ul>
           </p>
-          <p className="text-gray-600 mt-4 text-xl font-bold">
+          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
             Price: $749 + TAX
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -149,7 +149,7 @@ const Pricing = () => {
         {/* </div> */}
       </div>
       <Link to={"/contact"} className="btn mb-[30px]">
-        book now!
+        get a quote!
       </Link>
     </motion.section>
   );
