@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ImFacebook, ImInstagram } from "react-icons/im";
+import { ImFacebook, ImInstagram, ImWordpress } from "react-icons/im";
 
 const Socials = () => {
   return (
@@ -14,6 +14,11 @@ const Socials = () => {
         <li>
           <a href="https://www.instagram.com/rbmbooth/" target="_blank">
             <ImInstagram />
+          </a>
+        </li>
+        <li>
+          <a href="https://blogphotobooth.wordpress.com/" target="_blank">
+            <ImWordpress />
           </a>
         </li>
       </ul>

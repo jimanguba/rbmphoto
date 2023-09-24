@@ -31,8 +31,8 @@ const Pricing = () => {
             Includes:
             <ul className="list-disc list-inside">
               <li>2 hours of operation</li>
-              <li>Up to two 2x6 prints per photo session</li>
-              <li>Unlimited photo sessions and prints</li>
+              <li>Up to two 2x6 prints or one 4x6 print per photo session</li>
+              <li>Unlimited photo sessions with max. 120 prints</li>
               <li>Customized photobooth template</li>
               <li>Booth Attendant included</li>
             </ul>

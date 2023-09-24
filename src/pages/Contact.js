@@ -182,15 +182,15 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <label
-                htmlFor="event-date"
+                htmlFor="event-date-time"
                 className="block text-sm font-medium text-gray-700"
               >
-                Event Date
+                Event Date and Start Time
               </label>
               <input
-                type="date"
-                name="Event Date"
-                id="event-date"
+                type="datetime-local"
+                name="Event Date and Time"
+                id="event-date-time"
                 className="mt-1 px-4 py-2 block w-full border rounded-md focus:ring-accent focus:border-accent"
               />
             </div>
@@ -214,6 +214,20 @@ const Contact = () => {
                 <option value="Baptism">Baptism</option>
                 <option value="Other">Other</option>
               </select>
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="guest-count"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Estimated Number of Guests
+              </label>
+              <input
+                type="number"
+                name="Estimated Guests"
+                id="guest-count"
+                className="mt-1 px-4 py-2 block w-full border rounded-md focus:ring-accent focus:border-accent"
+              />
             </div>
             <div className="mb-4">
               <label

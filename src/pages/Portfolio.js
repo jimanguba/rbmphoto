@@ -22,10 +22,7 @@ const Portfolio = () => {
         Portfolio
       </motion.h1>
       <p className="text-lg md:text-xl text-center px-4 md:px-0">
-        Portfolio under construction! We have started showcasing event
-        galleries, and more past event memories will be added soon.
-        <br />
-        Thank you for your patience. Feel free to check out our{" "}
+        Please check out our{" "}
         <a
           href="https://www.facebook.com/photographyrbm/"
           target="_blank"
@@ -33,7 +30,7 @@ const Portfolio = () => {
         >
           Facebook page{" "}
         </a>
-        for more 🙂
+        for more!
       </p>
       <iframe
         title="pic-time integration"

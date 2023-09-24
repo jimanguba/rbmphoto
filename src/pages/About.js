@@ -81,14 +81,6 @@ const About = () => {
               <Link to={"/portfolio"} className="btn">
                 Photo booth pics
               </Link>
-              <a
-                href="https://blogphotobooth.wordpress.com/"
-                className="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Blog
-              </a>
             </div>
             <br />
             <iframe
