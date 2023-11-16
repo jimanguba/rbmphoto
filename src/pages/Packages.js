@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions.js";
+
+import GuestBook from "../img/packages/audio-guestbook.jpg";
 const Pricing = () => {
   return (
     <motion.section
@@ -31,23 +33,14 @@ const Pricing = () => {
             Includes:
             <ul className="list-disc list-inside">
               <li>2 hours of operation</li>
-              <li>Up to two 2x6 prints or one 4x6 print per photo session</li>
+              <li>Up to one 4x6 or two 2x6 prints per photo session</li>
               <li>Unlimited photo sessions with max. 120 prints</li>
-              <li>Customized photobooth template</li>
+              <li>Customized photo booth template</li>
               <li>Booth Attendant included</li>
-            </ul>
-            <br />
-            Additional Upgrade:
-            <ul className="list-disc list-inside">
-              <li>
-                One 4x6 print instead of two 2x6 prints per photo session:{" "}
-                <b>+$50</b>
-              </li>
+              <li>Instant digital photo copy after each photo session!</li>
+              <li>Premium props</li>
             </ul>
           </p>
-          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
-            Price: $279 + TAX
-          </p> */}
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-green-600">
@@ -57,16 +50,16 @@ const Pricing = () => {
             Includes:
             <ul className="list-disc list-inside">
               <li>3 hours of operation</li>
-              <li>Up to four 4x6 or six 2x6 prints per photo session</li>
+              <li>Up to three 4x6 or six 2x6 prints per photo session</li>
               <li>Unlimited photo sessions and prints</li>
-              <li>Customized photobooth template</li>
+              <li>Free audio guest book for 3 hours</li>
+              <li>Customized photo booth template</li>
               <li>Booth Attendant included</li>
               <li>Instant digital photo copy after each photo session!</li>
+              <li>Choose your backdrop</li>
+              <li>Premium props</li>
             </ul>
           </p>
-          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
-            Price: $519 + TAX
-          </p> */}
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-purple-600">
@@ -75,24 +68,49 @@ const Pricing = () => {
           <p className="text-gray-800">
             Includes:
             <ul className="list-disc list-inside">
-              <li>5 hours of operation</li>
-              <li>Up to six 4x6 or ten 2x6 prints per photo session</li>
+              <li>4 hours of operation</li>
+              <li>Up to five 4x6 or ten 2x6 prints per photo session</li>
               <li>Unlimited photo sessions and prints</li>
-              <li>Customized photobooth template</li>
+              <li>Free audio guest book for 4 hours</li>
+              <li>Customized photo booth template</li>
               <li>Booth Attendant included</li>
               <li>Instant digital photo copy after each photo session!</li>
-              <li>Online Gallery add-on (both options) included</li>
+              <li>Choose your backdrop</li>
+              <li>Premium props</li>
+              <li>Remove rbmphotobooth.ca from your photo template</li>
             </ul>
           </p>
-          {/* <p className="text-gray-600 mt-4 text-xl font-bold">
-            Price: $749 + TAX
-          </p> */}
         </div>
       </div>
 
       {/* Add-ons */}
       <h1 className="h1 text-4xl text-center mt-16">Add-ons</h1>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 mt-10">
+      <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center">
+  <div className="mb-4 md:mb-0 md:mr-4">
+    <img
+      src={GuestBook}
+      alt="Description of your image"
+      width="100%" // Set the width to 100% for responsiveness
+      className="rounded"
+    />
+  </div>
+  <div>
+    <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
+      Add-on: Audio Guest Book
+    </h2>
+    <p className="text-gray-800">
+      Your guests will have the opportunity to share their voices by picking up
+      the phone and leaving heartfelt recordings for you. Following the event,
+      we'll send you a downloadable link containing all the memorable messages.
+      Get ready to experience a mix of laughter and tears as you listen to the
+      touching and humorous moments captured in these recordings.
+    </p>
+
+    <p className="text-gray-600 mt-4 text-xl font-bold">Price: $120</p>
+  </div>
+</div>
+
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
             Add-on: Extended Fun
@@ -116,13 +134,13 @@ const Pricing = () => {
             <ul className="list-disc list-inside">
               <li>Within Winnipeg: No additional charge</li>
               <li>
-                Outside Winnipeg: <b>+$0.50/km</b>
+                Outside Winnipeg: <b>+$0.75/km</b>
               </li>
             </ul>
           </p>
         </div>
 
-        <div className="bg-white shadow-lg rounded-lg p-6">
+        {/* <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-primary font-bold mb-4 text-grey">
             Add-on: Online Gallery
           </h2>
@@ -145,8 +163,7 @@ const Pricing = () => {
               </li>
             </ul>
           </p>
-        </div>
-        {/* </div> */}
+        </div> */}
       </div>
       <Link to={"/contact"} className="btn mb-[30px]">
         get a quote!
